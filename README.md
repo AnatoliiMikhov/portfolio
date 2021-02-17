@@ -2,6 +2,6 @@
 
 ## For start run
 
->$ npm i\
->$ ncu -u\
+>$ npm i
+>$ ncu -u
 >$ gulp
