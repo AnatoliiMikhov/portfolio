@@ -1,5 +1,7 @@
 # portfolio
-## For start run: ##
->$ npm i <br>
->$ ncu -u <br>
->$ gulp <br>
+
+## For start run
+
+>$ npm i\
+>$ ncu -u\
+>$ gulp
