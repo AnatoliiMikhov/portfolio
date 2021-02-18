@@ -1,0 +1,14 @@
+@mixin before-round {
+	&:before {
+		content: '';
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		left: 0;
+		width: 36px;
+		height: 36px;
+		background: $main-color;
+		border-radius: 50%;
+		z-index: -1;
+	}
+}

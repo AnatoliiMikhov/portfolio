@@ -1,0 +1,23 @@
+.socialpanel {
+	position: fixed;
+	top: 226px;
+	left: 50px;
+	width: 338px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	transform: rotate(-90deg) translate(-165px, -160px);
+	z-index: 5;
+
+	&__divider {
+		width: 70px;
+		height: 2px;
+		background: #000;
+	}
+
+	&__link {
+		img {
+			transform: rotate(90deg);
+		}
+	}
+}
