@@ -1,14 +1,8 @@
 .promo {
+	position: relative;
 	min-height: 100vh;
 	padding-top: 206px;
-	background: url('../img/main_bg.jpg') 50% 50% / cover no-repeat;
-
-	&__name{
-		position: relative;
-		padding-left: 10px;
-		z-index: 10;
-		@include before-round;
-	}
+	background: url('../img/my_bg.jpg') 50% 50% / cover no-repeat;
 
 	&__title {
 		width: 532px;

@@ -1,6 +1,6 @@
 .title {
 	font-weight: bold;
-	color: #000000;
+	color: $title-color;
 
 	&__level{
 		&_1{
@@ -9,8 +9,16 @@
 		}
 	}
 
-	&_name {
+	&__section {
 		font-size: 16px;
 		line-height: 24px;
+		position: relative;
+		padding-left: 10px;
+		z-index: 10;
+		@include before-round;
+	}
+
+	&_white{
+		color: #ffffff;
 	}
 }
