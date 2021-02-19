@@ -7,17 +7,24 @@
 	justify-content: space-between;
 	align-items: center;
 	transform: rotate(-90deg) translate(-165px, -160px);
+
+	&__text {
+		color: #fff;
+	}
+
 	z-index: 5;
 
 	&__divider {
 		width: 70px;
 		height: 2px;
-		background: #000;
+		background: #fff;
 	}
 
 	&__link {
-		img {
-			transform: rotate(90deg);
+		svg {
+			path {
+				fill: #fff;
+			}
 		}
 	}
 }
