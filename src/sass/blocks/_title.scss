@@ -2,23 +2,28 @@
 	font-weight: bold;
 	color: $title-color;
 
-	&__level{
-		&_1{
+	&__level {
+		&_1 {
 			font-size: 48px;
 			line-height: 60px;
 		}
 	}
 
-	&__section {
+	&_section {
 		font-size: 16px;
 		line-height: 24px;
 		position: relative;
-		padding-left: 10px;
+		text-align: center;
 		z-index: 10;
 		@include before-round;
+
+		&:before {
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
 	}
 
-	&_white{
+	&_white {
 		color: #ffffff;
 	}
 }
