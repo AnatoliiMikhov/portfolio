@@ -1,20 +1,31 @@
-const hamburger = document.querySelector('.hamburger'),
-	menu = document.querySelector('.menu'),
-	closeBtn = document.querySelector('.menu__close');
+document.addEventListener('DOMContentLoaded', () => {
 
-hamburger.addEventListener('click', () => {
-	menu.classList.add('active');
-});
+	try {
+		const hamburger = document.querySelector('.hamburger'),
+			menu = document.querySelector('.menu'),
+			closeBtn = document.querySelector('.menu__close');
 
-closeBtn.addEventListener('click', () => {
-	menu.classList.remove('active');
-});
+		hamburger.addEventListener('click', () => {
+			menu.classList.add('active');
+		});
+
+		closeBtn.addEventListener('click', () => {
+			menu.classList.remove('active');
+		});
+	} catch (error) {
+		console.log(error);
+	}
 
 
-// progress rating
-const percents = document.querySelectorAll('.progress-item__percent'),
-	lines = document.querySelectorAll('.progress-item__inner');
+	// progress rating
+	try {
+		const percents = document.querySelectorAll('.progress-item__percent'),
+			lines = document.querySelectorAll('.progress-item__inner');
 
-percents.forEach((item, i) => {
-	lines[i].style.width = item.innerHTML;
+		percents.forEach((item, i) => {
+			lines[i].style.width = item.innerHTML;
+		});
+	} catch (error) {
+		console.log(error.message);
+	}
 });
