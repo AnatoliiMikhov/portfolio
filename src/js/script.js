@@ -9,3 +9,12 @@ hamburger.addEventListener('click', () => {
 closeBtn.addEventListener('click', () => {
 	menu.classList.remove('active');
 });
+
+
+// progress rating
+const percents = document.querySelectorAll('.progress-item__percent'),
+	lines = document.querySelectorAll('.progress-item__inner');
+
+percents.forEach((item, i) => {
+	lines[i].style.width = item.innerHTML;
+});
