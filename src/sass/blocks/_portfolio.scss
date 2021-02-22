@@ -1,0 +1,30 @@
+.portfolio {
+	padding-top: 120px;
+
+	&__wrapper {
+		display: grid;
+		grid-template: repeat(2, 280px) / repeat(4, 280px);
+		justify-content: space-between;
+		grid-auto-rows: 280px;
+		grid-auto-flow: row;
+		gap: 5px;
+		margin-top: 60px;
+		background-color: rgba($main-color, 0.3);
+	}
+
+	&__item {
+		img {
+			width: 100%;
+		}
+
+		&_vertical {
+			grid-row: 1 / span 2;
+			grid-column: 4 / 5;
+		}
+
+		&_horizontal {
+			grid-row: 2 / 3;
+			grid-column: 2 / span 2;
+		}
+	}
+}
