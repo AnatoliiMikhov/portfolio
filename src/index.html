@@ -113,7 +113,6 @@
 <body>
 	<main class="main">
 
-		<!-- ANCHOR socialpanel -->
 		<aside class="socialpanel">
 			<div class="socialpanel__text">Социальные сети</div>
 			<div class="socialpanel__divider"></div>
@@ -161,9 +160,7 @@
 				</svg></a>
 
 		</aside>
-		<!-- socialpanel -->
 
-		<!-- ANCHOR menu -->
 		<div class="menu">
 			<div class="menu__content">
 
@@ -256,9 +253,7 @@
 
 			<div class="menu__overlay"></div>
 		</div>
-		<!-- menu -->
 
-		<!-- ANCHOR promo -->
 		<section class="promo">
 			<div class="hamburger">
 				<span class="hamburger__item"></span>
@@ -278,13 +273,14 @@
 
 			</div>
 		</section>
-		<!-- promo -->
 
-		<!-- ANCHOR about -->
 		<section class="about">
 			<div class="container">
 				<div class="about-grid">
-					<div class="about__img"></div>
+					<div class="about__img">
+						<img src="img/my_photo.jpg"
+							alt="I am">
+					</div>
 
 					<div class="about__content">
 						<h2 class="title title_section about__title">Про меня</h2>
@@ -329,9 +325,7 @@
 				</div>
 			</div>
 		</section>
-		<!-- about -->
 
-		<!--  ANCHOR experience -->
 		<section class="experience">
 			<div class="container">
 				<h2 class="title title_section experience__title">Опыт</h2>
@@ -405,9 +399,7 @@
 				</div>
 			</div>
 		</section>
-		<!-- experience -->
 
-		<!-- ANCHOR skills -->
 		<section class="skills">
 			<div class="container">
 				<h2 class="title title_section experience__title">Навыки</h2>
@@ -579,9 +571,7 @@
 				</section><!-- progress -->
 			</div>
 		</section>
-		<!-- skills -->
 
-		<!-- ANCHOR portfolio -->
 		<section class="portfolio">
 			<div class="container">
 				<h2 class="title title_section experience__title">Портфолио</h2>
@@ -616,9 +606,7 @@
 				</div>
 			</div>
 		</section>
-		<!-- portfolio -->
 
-		<!-- ANCHOR price -->
 		<section class="price">
 			<div class="container">
 				<h2 class="title title_section experience__title">Прайс-лист</h2>
@@ -670,15 +658,13 @@
 				</div>
 			</div>
 		</section>
-		<!-- price -->
 
-		<!-- ANCHOR contact -->
 		<section class="contact">
 			<div class="container">
 				<div class="contact__wrapper">
 					<div class="contact__column">
 						<div class="contact__photo">
-							<img src="img/my_photo_resize.jpg"
+							<img src="img/my_photo.jpg"
 								alt="I am">
 						</div>
 					</div>
@@ -688,12 +674,15 @@
 						<div class="divider contact__divider"></div>
 						<div class="contact__text title">Любым удобным для вас способом:</div>
 						<div class="contact-social">
-							<div class="contact-social__icon"><img src="icons/contact/facebook.svg"
-									alt="facebook"></div>
-							<div class="contact-social__icon"><img src="icons/contact/telegram.svg"
-									alt="telegram"></div>
-							<div class="contact-social__icon"><img src="icons/contact/instagram.svg"
-									alt="instagram"></div>
+							<a href="#"
+								class="contact-social__icon"><img src="icons/contact/facebook.svg"
+									alt="facebook"></a>
+							<a href="#"
+								class="contact-social__icon"><img src="icons/contact/telegram.svg"
+									alt="telegram"></a>
+							<a href="#"
+								class="contact-social__icon"><img src="icons/contact/instagram.svg"
+									alt="instagram"></a>
 						</div>
 						<div class="contact__text title">Или оставьте ваши данные и я сам вам напишу:</div>
 
@@ -705,7 +694,8 @@
 								<div class="contact-form__input">
 									<input type="text"
 										id="name"
-										name="name">
+										name="name"
+										required>
 									<label for="name">Ваше имя</label>
 								</div>
 
@@ -713,7 +703,8 @@
 								<div class="contact-form__input">
 									<input type="email"
 										name="email"
-										id="email">
+										id="email"
+										required>
 									<label for="email">Ваша почта</label>
 								</div>
 
@@ -723,8 +714,20 @@
 									<label for="contactText">Ваше сообщение</label>
 								</div>
 
-								<div>
+								<div class="contact-form__triggers">
 									<button class="btn contact-form__btn">Отправить сообщение</button>
+									<div class="contact-form-policy">
+										<input type="checkbox"
+											name="policy"
+											id="policyCheck"
+											required>
+										<div class="contact-form-policy__elem"><span>Я согласен(а) с</span>
+											<a href="/policy.html"
+												class="contact-form-policy__link"
+												title="Прочитать политику конфиденциальности"
+												target="_blank">политикой конфиденциальности</a>
+										</div>
+									</div>
 								</div>
 
 							</div>
