@@ -17,22 +17,57 @@
 }
 
 .container {
-    width: 1140px;
+    max-width: 1140px;
     margin: 0 auto;
 }
 
-@import 'blocks/divider';
-@import 'blocks/socialpanel';
-@import 'blocks/title';
-@import 'blocks/subtitle';
-@import 'blocks/button';
-@import 'blocks/hamburger';
-@import 'blocks/menu';
-@import 'blocks/promo';
-@import 'blocks/about';
-@import 'blocks/experience';
-@import 'blocks/skills';
-@import 'blocks/progress';
-@import 'blocks/portfolio';
-@import 'blocks/price';
-@import 'blocks/contact';
+@media (max-width: 1199.98px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .container {
+        max-width: 540px;
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@import 'blocks/divider/divider';
+@import 'blocks/socialpanel/socialpanel';
+@import 'blocks/title/title';
+@import 'blocks/subtitle/subtitle';
+@import 'blocks/buttons/buttons';
+@import 'blocks/hamburger/hamburger';
+@import 'blocks/menu/menu';
+@import 'blocks/promo/promo';
+@import 'blocks/about/about';
+@import 'blocks/experience/experience';
+@import 'blocks/skills/skills';
+@import 'blocks/progress/progress';
+@import 'blocks/portfolio/portfolio';
+@import 'blocks/price/price';
+@import 'blocks/contacts/contacts';
+
+
+// media
+@import 'blocks/subtitle/subtitle-media';
+@import 'blocks/socialpanel/socialpanel-media';
+@import 'blocks/hamburger/hamburger-media';
+@import 'blocks/menu/menu-media';
+@import 'blocks/promo/promo-media';
+@import 'blocks/about/about-media';
+@import 'blocks/experience/experience-media';

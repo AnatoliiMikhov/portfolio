@@ -10,15 +10,10 @@
 	align-items: flex-end;
 	cursor: pointer;
 
-	&:hover {
-		align-items: center;
-	}
-
 	&__item {
 		display: block;
 		width: 30px;
 		height: 3px;
-		// background: #151812;
 		background: #fff;
 
 		&_long {

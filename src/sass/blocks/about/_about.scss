@@ -3,8 +3,8 @@
 
 	&-grid {
 		display: grid;
-		grid-template-columns: 400px 570px;
-		grid-template-rows: minmax(247px, auto) minmax(317px, auto);
+		grid-template: minmax(247px, auto) minmax(317px, auto) / 400px 570px;
+		grid-auto-rows: auto;
 		gap: 40px 70px;
 	}
 
@@ -35,13 +35,11 @@
 	}
 
 	&__subtitle {
-		font-size: 36px;
-		line-height: 60px;
 		text-align: left;
 	}
 
 	&__divider {
-		margin: 0 0 20px;
+		margin: 8px 0 0;
 	}
 
 	&__text {
@@ -50,14 +48,17 @@
 		font-size: 14px;
 		line-height: 21px;
 		color: $text-color;
+		margin-top: 20px;
 	}
 
 	&-subgrid {
 		display: grid;
 		grid-template-columns: repeat(2, 200px);
 		grid-template-rows: repeat(2, minmax(116px, auto));
-		grid-auto-rows: auto;
-		gap: 20px 110px;
+		grid-auto-rows: minmax(116px, auto);
+		justify-content: space-between;
+		align-content: flex-start;
+		row-gap: 20px;
 		margin-left: 50px;
 
 		&__title {
