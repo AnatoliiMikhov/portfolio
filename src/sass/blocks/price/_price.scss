@@ -3,8 +3,8 @@
 
 	&__wrapper {
 		display: grid;
-		grid-template: repeat(3, 44px) / repeat(2, 370px);
-		grid-auto-rows: 44px;
+		grid-template: repeat(3, minmax(44px, auto)) / repeat(2, 370px);
+		grid-auto-rows: minmax(44px, auto);
 		grid-auto-flow: row;
 		row-gap: 15px;
 		justify-content: space-between;

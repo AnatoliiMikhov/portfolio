@@ -1,11 +1,27 @@
-@media (max-width: 1199.98px) {}
+@media (max-width: 991.98px) {
+	.price {
+		&__wrapper {
+			grid-template: repeat(3, minmax(44px, auto)) / repeat(auto-fit, 290px);
+			margin-top: 48px;
+			padding: 0;
+			padding-left: 35px;
+		}
+	}
+}
 
-@media (max-width: 991.98px) {}
+@media (max-width: 767.98px) {
+	.price {
+		&__wrapper {
+			grid-template: repeat(3, minmax(44px, auto)) / repeat(auto-fit, 100%);
+			justify-content: center;
+		}
+	}
+}
 
-@media (max-width: 767.98px) {}
-
-@media (max-width: 575.98px) {}
-
-@media (max-width: 424.98px) {}
-
-@media (max-width: 374.98px) {}
+@media (max-width: 575.98px) {
+	.price {
+		&__wrapper {
+			padding-left: 24px;
+		}
+	}
+}
