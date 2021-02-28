@@ -28,4 +28,35 @@ document.addEventListener('DOMContentLoaded', () => {
 	} catch (error) {
 		console.log(error.message);
 	}
+
+	// send form data
+	try {
+		const form = document.querySelector('#contact-form');
+		// const inputs = document.querySelectorAll('input');
+		// const textarea = document.querySelector('textarea');
+
+		form.addEventListener('submit', (e) => {
+			e.preventDefault();
+			const formData = new FormData(form);
+			try {
+				fetch('mailer/smart.php', {
+					method: 'POST',
+					body: formData
+				}).then(() => {
+					console.log('data sended');
+					/* inputs.forEach(field => {
+						field.value = '';
+					});
+					textarea.value = ''; */
+					form.reset();
+				})
+			} catch (error) {
+				console.log(error);
+			}
+		});
+	} catch (error) {
+		console.log(error);
+	}
+
+
 });
